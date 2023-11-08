@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from '../styles/Home.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Employee from '../components/employee-card';
 import Alumni from '../components/alumni-card';

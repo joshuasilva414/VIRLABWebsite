@@ -4,8 +4,7 @@ import BootstrapCarousel from "../components/carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from '../components/page-footer';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Map from '../components/Map';
-import GoogleMap from '../components/Map';
+
 export default function Home() {
 return (
     <>  
@@ -45,12 +44,9 @@ return (
                     </div>
                 </div>
                 <div class="col mt-5 " style={{paddingBottom: '5vw'}}>
-                    <p style={{paddingLeft: '10px'}}>506 Dolorosa St, San Antonio, TX 78204</p>
-                    <div class="container" style={{height: '34vh'}}>
-                        <GoogleMap/>
-                    </div>
-                    
-                    <p>contact: <a href='https://sites.google.com/site/kevinpdesai/home?authuser=0'>kevin.desai@utsa.edu</a></p>
+                    <p style={{paddingTop: '50px'}}>506 Dolorosa St, San Antonio, TX 78204</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.1810264766345!2d-98.49849797426671!3d29.42350509772307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c58b297f93b43%3A0x483ecbbfc9c5f6d1!2s506%20Dolorosa%20St%2C%20San%20Antonio%2C%20TX%2078204!5e0!3m2!1sen!2sus!4v1699423318960!5m2!1sen!2sus" width="400" height="300" style={{border: '0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p style={{paddingTop: '50px'}}>contact: <a href='https://sites.google.com/site/kevinpdesai/home?authuser=0'>kevin.desai@utsa.edu</a></p>
 
                 </div>
             </div>
