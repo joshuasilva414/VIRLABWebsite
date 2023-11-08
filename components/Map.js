@@ -1,4 +1,5 @@
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react"
+import styles from '../styles/Map.module.css';  
 
 const mapStyles = {
     width: '30%',
