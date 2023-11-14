@@ -21,7 +21,7 @@ export default function Alumni(props) {
 }
 Alumni.defaultProps = {
     image: "/Portrait_Placeholder.png",
-    personal: "/people.js"
+    personal: "/people"
 
 }
 // name, education, image, personal

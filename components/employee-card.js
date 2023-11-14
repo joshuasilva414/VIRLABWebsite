@@ -19,7 +19,7 @@ export default function Employee(props) {
 }
 Employee.defaultProps = {
     image: "/Portrait_Placeholder.png",
-    personal: "/people.js"
+    personal: "/people"
 
 }
 // name, education, image, personal
