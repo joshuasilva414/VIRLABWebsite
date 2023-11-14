@@ -64,7 +64,7 @@ export default function People() {
             <Alumni name="Jeff Dong" education="B.S. Computer Science at UTSA (2023)" job="Software Developer at Paycom" personal="https;//github.com/Jeffafuh" image="JeffDong.jpeg"></Alumni>
             <Alumni name="Ker Xiang Teh" education="B.S. Computer Science at UTSA (2023)" job="Application Security Engineer at HEB" personal="https://www.linkedin.com/in/ker-xiang-teh-a24343101/" image="KerXiangTeh.jpeg"></Alumni>
             <Alumni name="Hector Pineda" education="B.S. Computer Science at UTSA (2023)" job="Software Developer at HEB" personal="https://www.linkedin.com/in/hector-pineda-5b733a216/" image="HectorPineda.jpeg"></Alumni>
-            <Alumni name="Ivy Vasquez Sandoval" education="B.S. Computer Science at UTSA (2023)" job="Robotics Software Engineer at Plus One Robotics" personal="https://www.linkedin.com/in/ivybrandyn/" image="IvyVasquez.jpeg"></Alumni>
+            <Alumni name="Ivy Vasquez Sandoval" education="B.S. Computer Science at UTSA (2023)" job="Robotics Software Engineer at Plus One Robotics" personal="https://www.linkedin.com/in/ivybrandyn/" ></Alumni>
         </div>
         <Footer/>
     

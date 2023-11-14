@@ -60,7 +60,7 @@ export default function Publication(props){
     );
 }
 Publication.defaultProps = {
-    
+    pdfLink: 'https://sites.google.com/site/kevinpdesai/publications-projects?authuser=0',
     pubImage: "/placeHolder.png",
     bibtex: 'no bibtex citation available'
 }
