@@ -7,7 +7,7 @@ function Footer() {
         <footer class="bg-dark text-center text-white">
             
             <div style={{paddingTop: '40px'}}>
-                <b><p>Copyright © VIRLab 2023-2023</p></b>
+                <b><p>Copyright © VIRLab 2023</p></b>
             </div>
             
             

@@ -23,10 +23,10 @@ export default function Publication(props){
                     <div class="col-10 col-sm-4 col-md-8 col-lg-10">
                         <a href={props.pubLink} style={{marginBottom: '0px', textDecoration: 'none', color: "black"}}><p style={{marginBottom: '0px'}} class="card-title "><b>{props.title}<img/></b></p></a>
                         <p style={{marginBottom: '0px'}}> {props.authors}</p>
-                        <div>
+                        
                             <p><i>{props.venue}</i></p>
                             <p style={{marginBottom: '0px'}}>{props.impactFactor} {props.h5Index} {props.acceptanceRate}</p>
-                        </div>
+                        
                         <div>
                         <div className="btn-group">
                             <button id="triggerButton" className={`${styles['btn-white']} ${styles['btn-hover-gray']} `}  onClick={togglePopup} style={{}}>
