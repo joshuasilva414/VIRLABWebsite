@@ -2,7 +2,7 @@
 module.exports = {
   output: "export",
   distDir: "build",
-  basePath: "~kdesai/virlab",
+  basePath: "/~kdesai/virlab",
   images: {
     unoptimized: true,
   },
