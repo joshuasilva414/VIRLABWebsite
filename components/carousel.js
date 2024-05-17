@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { items } from "../public/Items.json";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,17 +13,28 @@ export default function BootstrapCarousel() {
     setIndex(selectedIndex);
   };
   return (
-    <div class="container" style={{width: '90vw', display: 'flex', justifyContent: 'center', padding: '75px'}}>
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            {bootstrap.map((item) => (
-                <Carousel.Item key={item.id} className={styles.itemP} interval={4000}>
-                <img src={item.imageUrl} alt="slides" />
-                
-                </Carousel.Item>
-            ))}
-        </Carousel>
+    <div
+      class="container"
+      style={{
+        width: "90vw",
+        display: "flex",
+        justifyContent: "center",
+        padding: "75px",
+      }}
+    >
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        {bootstrap.map((item) => (
+          <Carousel.Item key={item.id} className={styles.itemP} interval={4000}>
+            <Image
+              className={styles.carouselImage}
+              src={item.imageUrl}
+              width={0}
+              height={0}
+              alt="slides"
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
-    );
-    
-    
+  );
 }
