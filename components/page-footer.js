@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { basePath } from "../next.config";
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
 
         <div style={{ paddingBottom: "50px" }}>
           <Image
-            src="VIRLABLOGO.png"
+            src={basePath + "/VIRLABLOGO.png"}
             alt="Image 1"
             width={100}
             height={100}
@@ -25,7 +26,7 @@ function Footer() {
             }}
           />
           <Image
-            src="utsaimage.png"
+            src={basePath + "/utsaimage.png"}
             alt="Image 2"
             width={100}
             height={100}

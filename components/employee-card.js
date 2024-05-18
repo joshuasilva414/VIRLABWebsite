@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Employee(
   props = { image: "/Portrait_Placeholder.png", personal: "/people" }
@@ -21,9 +22,9 @@ export default function Employee(
       </div>
 
       <div class="card-body">
-        <a href={props.personal} style={{ textDecoration: "none" }}>
+        <Link href={props.personal} style={{ textDecoration: "none" }}>
           <h4 class="card-title">{props.name}</h4>
-        </a>
+        </Link>
         <p class="card-text">{props.education}</p>
       </div>
     </div>

@@ -4,6 +4,8 @@ import Publication from "../components/publication-card.js";
 import Footer from "../components/page-footer";
 import styles from "../styles/Button.module.css";
 import Head from "next/head";
+import Link from "next/link";
+
 export default function Publications() {
   return (
     <>
@@ -29,29 +31,29 @@ export default function Publications() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <Link class="nav-link" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/people">
+                <Link class="nav-link" href="/people">
                   People
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/projects">
+                <Link class="nav-link " href="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/publications">
+                <Link class="nav-link active" href="/publications">
                   Publications
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/sponsors">
+                <Link class="nav-link " href="/sponsors">
                   Sponsors
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -78,7 +80,7 @@ export default function Publications() {
           title="Assessment HTN (A-HTN) for Automated Task Performance Assessment in 3D Serious Games"
           authors="Desai, Kevin, Omeed Ashtiani, and Balakrishnan Prabhakaran"
           venue="arXiv 2023"
-          pubImage="publicationImages/Publication1.png"
+          pubImage="/publicationImages/Publication1.png"
           bibtex="@misc{desai2023assessment,
       title={Assessment HTN (A-HTN) for Automated Task Performance Assessment in 3D Serious Games}, 
       author={Kevin Desai and Omeed Ashtiani and Balakrishnan Prabhakaran},
@@ -93,7 +95,7 @@ export default function Publications() {
           title="A Study of Human Fitness Pose Classification Using Artificial Neural Networks."
           venue="ICIT 2023"
           authors="Shang, Sijie, Rong Jin, and Kevin Desai"
-          pubImage="publicationImages/Publication2.png"
+          pubImage="/publicationImages/Publication2.png"
         />
         <Publication
           pdfLink=""
@@ -102,7 +104,7 @@ export default function Publications() {
           ImpactFactors="3.85"
           authors="Young, Paul, Nima Ebadi, Arun Das, Mazal Bethany, Kevin Desai, and Peyman Najafirad"
           venue="2023"
-          pubImage="publicationImages/Publication3.png"
+          pubImage="/publicationImages/Publication3.png"
           bibtex="@INPROCEEDINGS{10225860,
   author={Shang, Sijie and Jin, Rong and Desai, Kevin},
   booktitle={2023 International Conference on Information Technology (ICIT)}, 
@@ -147,7 +149,7 @@ export default function Publications() {
           venue="2022 26th International Conference on Pattern Recognition (ICPR) 2022"
           acceptanceRate="47.8"
           h5Index="h5Index: 43 (61)"
-          pubImage="publicationImages/Publication6.png"
+          pubImage="/publicationImages/Publication6.png"
         />
         <Publication
           pdfLink=""
@@ -186,7 +188,7 @@ issn={2184-4321},
           venue="Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2022"
           acceptanceRate="60"
           h5Index="h5Index: 89 (154)"
-          pubImage="publicationImages/Publication9.png"
+          pubImage="/publicationImages/Publication9.png"
           bibtex="@InProceedings{Peng_2022_CVPR,
     author    = {Peng, Kebin and Islam, Rifatul and Quarles, John and Desai, Kevin},
     title     = {TMVNet: Using Transformers for Multi-View Voxel-Based 3D Reconstruction},
@@ -204,7 +206,7 @@ issn={2184-4321},
           venue="Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition 2022"
           h5Index="h5Index: 89 (154)"
           bestPaperAward="6%"
-          pubImage="publicationImages/Publication10.png"
+          pubImage="/publicationImages/Publication10.png"
           bibtex="@InProceedings{Medjaouri_2022_CVPR,
     author    = {Medjaouri, Omar and Desai, Kevin},
     title     = {HR-STAN: High-Resolution Spatio-Temporal Attention Network for 3D Human Motion Prediction},
@@ -221,7 +223,7 @@ issn={2184-4321},
           authors="Bendre, Nihar, Kevin Desai, and Peyman Najarad"
           venue="2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC) 2021"
           h5Index="h5Index: 32 (47)"
-          pubImage="publicationImages/Publication11.png"
+          pubImage="/publicationImages/Publication11.png"
           bibtex="@INPROCEEDINGS{9659223,
   author={Bendre, Nihar and Desai, Kevin and Najafirad, Peyman},
   booktitle={2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)}, 
@@ -241,7 +243,7 @@ issn={2184-4321},
           venue="2021 IEEE International Symposium on Mixed and Augmented Reality (ISMAR) 2021"
           acceptanceRate="23.6"
           h5Index="h5Index: 25 (35)"
-          pubImage="publicationImages/Publication12.png"
+          pubImage="/publicationImages/Publication12.png"
           bibtex="@INPROCEEDINGS{9583838,
   author={Islam, Rifatul and Desai, Kevin and Quarles, John},
   booktitle={2021 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)}, 
@@ -261,7 +263,7 @@ issn={2184-4321},
           venue="2021 IEEE International Conference on Image Processing (ICIP) 2021"
           acceptanceRate="46"
           h5Index="h5Index: 60 (89)"
-          pubImage="publicationImages/Publication13.png"
+          pubImage="/publicationImages/Publication13.png"
           bibtex="@INPROCEEDINGS{9506108,
   author={Bendre, Nihar and Desai, Kevin and Najafirad, Peyman},
   booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, 
@@ -280,7 +282,7 @@ issn={2184-4321},
           authors="Guzman, Herbert, Reenam Joshi, Victor Guzman, Max Kilger, and Kevin Desai"
           venue="2021 World Automation Congress (WAC) 2021"
           h5Index="h5Index: 13 (20)"
-          pubImage="publicationImages/Publication14.png"
+          pubImage="/publicationImages/Publication14.png"
           bibtex="@INPROCEEDINGS{9559516,
   author={Guzman, Herbert and Joshi, Reenam and Guzman, Victor and Kilger, Max and Desai, Kevin},
   booktitle={2021 World Automation Congress (WAC)}, 
@@ -340,7 +342,7 @@ series = {MM '19}
           venue="9th ACM Multimedia Systems Conference 2018"
           acceptanceRate="26"
           h5Index="h5Index: 34 (65)"
-          pubImage="publicationImages/Publication18.png"
+          pubImage="/publicationImages/Publication18.png"
           bibtex="@inproceedings{10.1145/3204949.3204958,
 author = {Desai, Kevin and Prabhakaran, Balakrishnan and Raghuraman, Suraj},
 title = {Combining Skeletal Poses for 3D Human Model Generation Using Multiple Kinects},
@@ -366,7 +368,7 @@ series = {MMSys '18}
           venue="9th ACM Multimedia Systems Conference 2018"
           acceptanceRate="26"
           h5Index="h5Index: 34 (65)"
-          pubImage="publicationImages/Publication19.png"
+          pubImage="/publicationImages/Publication19.png"
           bibtex="@inproceedings{10.1145/3204949.3204969,
 author = {Desai, Kevin and Prabhakaran, Balakrishnan and Raghuraman, Suraj},
 title = {Skeleton-Based Continuous Extrinsic Calibration of Multiple RGB-D Kinect Cameras},
@@ -392,7 +394,7 @@ series = {MMSys '18}
           venue="2017 IEEE international symposium on multimedia (ISM) 2017"
           acceptanceRate="23.02"
           h5Index="h5Index: 18 (26)"
-          pubImage="publicationImages/Publication20.png"
+          pubImage="/publicationImages/Publication20.png"
           bibtex="@INPROCEEDINGS{8241591,
   author={Desai, Kevin and Raghuraman, Suraj and Jin, Rong and Prabhakaran, Balakrishnan},
   booktitle={2017 IEEE International Symposium on Multimedia (ISM)}, 
@@ -411,7 +413,7 @@ series = {MMSys '18}
           authors="Desai, Kevin, Kanchan Bahirat, and Balakrishnan Prabhakaran"
           venue="2017 IEEE International Conference on Multimedia and Expo (ICME) 2017"
           h5Index="h5Index: 35 (57)"
-          pubImage="publicationImages/Publication21.png"
+          pubImage="/publicationImages/Publication21.png"
           bibtex="@INPROCEEDINGS{8019470,
   author={Desai, Kevin and Bahirat, Kanchan and Prabhakaran, Balakrishnan},
   booktitle={2017 IEEE International Conference on Multimedia and Expo (ICME)}, 
@@ -432,7 +434,7 @@ series = {MMSys '18}
           venue="2017 IEEE Third International Conference on Multimedia Big Data (BigMM) 2017"
           acceptanceRate="23.9"
           h5Index="h5Index: 19 (29)"
-          pubImage="publicationImages/Publication22.png"
+          pubImage="/publicationImages/Publication22.png"
           bibtex="@INPROCEEDINGS{7966775,
   author={Desai, Kevin and Belmonte, Uriel Haile Hernndez and Jin, Rong and Prabhakaran, Balakrishnan and Diehl, Paul and Ramirez, Victor Ayala and Johnson, Vinu and Gans, Murry},
   booktitle={2017 IEEE Third International Conference on Multimedia Big Data (BigMM)}, 
@@ -476,7 +478,7 @@ series = {MMSys '16}
           venue="2015 IEEE International Symposium on Multimedia (ISM) 2015"
           acceptanceRate="25.5"
           h5Index="h5Index: 18 (26)"
-          pubImage="publicationImages/Publication24.png"
+          pubImage="/publicationImages/Publication24.png"
           bibtex="@INPROCEEDINGS{7442307,
   author={Desai, Kevin and Bahirat, Kanchan and Raghuraman, Suraj and Prabhakaran, Balakrishnan},
   booktitle={2015 IEEE International Symposium on Multimedia (ISM)}, 

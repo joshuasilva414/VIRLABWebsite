@@ -4,6 +4,8 @@ import Employee from "../components/employee-card";
 import Alumni from "../components/alumni-card";
 import Footer from "../components/page-footer";
 import Head from "next/head";
+import Link from "next/link";
+
 export default function People() {
   return (
     <>
@@ -29,29 +31,29 @@ export default function People() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="/">
+                  <Link class="nav-link" href="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="/people">
+                  <Link class="nav-link active" href="/people">
                     People
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/projects">
+                  <Link class="nav-link" href="/projects">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/publications">
+                  <Link class="nav-link" href="/publications">
                     Publications
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/sponsors">
+                  <Link class="nav-link" href="/sponsors">
                     Sponsors
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -67,7 +69,7 @@ export default function People() {
           <Employee
             name="Kevin Desai"
             education="Assistant Professor in Computer Science at UTSA"
-            image="/KevinDesai.jpeg"
+            image="KevinDesai.jpeg"
             personal="https://sites.google.com/site/kevinpdesai"
           ></Employee>
         </div>
@@ -82,7 +84,7 @@ export default function People() {
           name="Ayda Eghbalian"
           education="PhD in Computer Science at UTSA "
           personal="https://www.linkedin.com/in/ayda-eghbalian-a825b8111/"
-          image="/Ayda.jpeg"
+          image="Ayda.jpeg"
         ></Employee>
         <Employee
           name="Md Mushfiqur Azam"
@@ -111,7 +113,7 @@ export default function People() {
           name="OFM Riaz Rahman Aranya"
           education="PhD in Computer Science at UTSA "
           personal="https://aranya059.github.io/"
-          image="/RiazRahmanAranya.jpeg"
+          image="RiazRahmanAranya.jpeg"
         ></Employee>
       </div>
       <div class="container " style={{ display: "flex", flexWrap: "wrap" }}>
@@ -137,9 +139,9 @@ export default function People() {
         <Alumni
           name="Jenelle Millison"
           education="BS in Computer Science at UTSA (2022)"
-          job="  Data Scientist at Johns Hopkins University Applied Physics Lab"
-          personal=" https://www.linkedin.com/in/jenelle-millison"
-          image="/jenelle.jpeg"
+          job=" Data Scientist at Johns Hopkins University Applied Physics Lab"
+          personal="https://www.linkedin.com/in/jenelle-millison"
+          image="jenelle.jpeg"
         ></Alumni>
 
         <Alumni
@@ -168,6 +170,7 @@ export default function People() {
           education="B.S. Computer Science at UTSA (2023)"
           job="Robotics Software Engineer at Plus One Robotics"
           personal="https://www.linkedin.com/in/ivybrandyn/"
+          image="IvyVasquez.jpeg"
         ></Alumni>
       </div>
       <Footer />

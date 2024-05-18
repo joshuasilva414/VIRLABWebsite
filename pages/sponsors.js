@@ -3,6 +3,14 @@ import styles from "../styles/Home.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "../components/page-footer";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+
+import xilinx from "../public/xilinx.jpeg";
+import nsf from "../public/nsf.jpeg";
+import utsa from "../public/utsaimage.png";
+import sappt from "../public/sappt.jpeg";
+
 export default function Sponsors() {
   return (
     <>
@@ -27,29 +35,29 @@ export default function Sponsors() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <Link class="nav-link" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/people">
+                <Link class="nav-link" href="/people">
                   People
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/projects">
+                <Link class="nav-link " href="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/publications">
+                <Link class="nav-link " href="/publications">
                   Publications
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/sponsors">
+                <Link class="nav-link active" href="/sponsors">
                   Sponsors
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,7 +67,7 @@ export default function Sponsors() {
         class="container "
         style={{ paddingTop: "5vh", display: "flex", flexWrap: "wrap" }}
       >
-        <a
+        <Link
           href="https://utsa.edu"
           style={{ textDecoration: "none", color: "blac" }}
         >
@@ -67,7 +75,14 @@ export default function Sponsors() {
             class="card"
             style={{ width: "18rem", marginRight: "5vw", marginBottom: "5vw" }}
           >
-            <img src="/utsaimage.png" class="card-img-top" alt="..." />
+            <Image
+              width={100}
+              height={100}
+              src={utsa}
+              style={{ objectFit: "contain" }}
+              class="card-img-top"
+              alt="..."
+            />
 
             <div class="card-body">
               <h5 class="card-title text-center ">
@@ -75,8 +90,8 @@ export default function Sponsors() {
               </h5>
             </div>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://www.nsf.gov/"
           style={{ textDecoration: "none", color: "black" }}
         >
@@ -84,7 +99,14 @@ export default function Sponsors() {
             class="card"
             style={{ width: "18rem", marginRight: "5vw", marginBottom: "5vw" }}
           >
-            <img src="/nsf.jpeg" class="card-img-top" alt="..." />
+            <Image
+              width={100}
+              height={100}
+              src={nsf}
+              style={{ objectFit: "contain" }}
+              class="card-img-top"
+              alt="..."
+            />
 
             <div class="card-body">
               <h5 class="card-title text-center">
@@ -92,14 +114,21 @@ export default function Sponsors() {
               </h5>
             </div>
           </div>
-        </a>
+        </Link>
 
         <div
           class="card"
           style={{ width: "18rem", marginRight: "5vw", marginBottom: "5vw" }}
         >
-          <img src="/sappt.jpeg" class="card-img-top" alt="..." />
-          <a
+          <Image
+            width={100}
+            height={100}
+            src={sappt}
+            style={{ objectFit: "contain" }}
+            class="card-img-top"
+            alt="..."
+          />
+          <Link
             href="https://campaigns.uthscsa.edu/sappt/?utm_source=event&utm_medium=pres101519&utm_campaign=temp_sappt_jointinitiative"
             style={{ textDecoration: "none", color: "black" }}
           >
@@ -108,21 +137,31 @@ export default function Sponsors() {
                 The San Antonio Partnership for Precision Therapeutics (SAPPT)
               </h5>
             </div>
-          </a>
+          </Link>
         </div>
 
-        <a style={{ textDecoration: "none", color: "black" }}>
+        <Link
+          href="https://www.xilinx.com/products/silicon-devices/fpga.html"
+          style={{ textDecoration: "none", color: "black" }}
+        >
           <div
             class="card"
             style={{ width: "18rem", marginRight: "5vw", marginBottom: "5vw" }}
           >
-            <img src="/xilinx.jpeg" class="card-img-top" alt="..." />
+            <Image
+              width={100}
+              height={100}
+              src={xilinx}
+              class="card-img-top"
+              style={{ objectFit: "contain" }}
+              alt="..."
+            />
 
             <div class="card-body">
               <h5 class="card-title text-center">Xilinx Inc.</h5>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
 
       <Footer />

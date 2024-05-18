@@ -4,6 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Project from "../components/project-card";
 import Footer from "../components/page-footer";
 import Head from "next/head";
+import Link from "next/link";
+
 export default function Projects() {
   return (
     <>
@@ -28,29 +30,29 @@ export default function Projects() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <Link class="nav-link" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/people">
+                <Link class="nav-link" href="/people">
                   People
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/projects">
+                <Link class="nav-link active" href="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/publications">
+                <Link class="nav-link " href="/publications">
                   Publications
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/sponsors">
+                <Link class="nav-link " href="/sponsors">
                   Sponsors
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
